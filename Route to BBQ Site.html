@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3歲生日燒烤派對 - 自駕導航指南</title>
+    <style>
+        :root {
+            --primary-color: #ff7675;
+            --secondary-color: #ffeaa7;
+            --bg-color: #f7f9fa;
+            --text-color: #2d3436;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff7675, #fab1a0);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 { font-size: 1.6rem; margin-bottom: 8px; }
+        .header p { font-size: 0.95rem; opacity: 0.95; }
+        .container {
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .info-box {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            border-left: 5px solid #fdcb6e;
+        }
+        .step-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e1e8ed;
+        }
+        .image-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            background-color: #eaeaea;
+        }
+        .image-grid img {
+            width: 100%;
+            flex-shrink: 0;
+            scroll-snap-align: start;
+            height: 260px;
+            object-fit: cover;
+            loading: lazy;
+        }
+        .image-tip {
+            background-color: #f1f2f6;
+            font-size: 0.8rem;
+            color: #57606f;
+            text-align: center;
+            padding: 6px 0;
+            border-bottom: 1px solid #e1e8ed;
+        }
+        .step-content {
+            padding: 20px;
+            position: relative;
+        }
+        .step-badge {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -14px;
+            left: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .step-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .step-desc { font-size: 0.95rem; color: #636e72; }
+        .arrow {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: -10px 0 15px 0;
+        }
+        .parking-tips {
+            background-color: #e3faf2;
+            border: 1px solid #a3e9d2;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+        .btn-call {
+            display: block;
+            background-color: #0984e3;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 30px 0 20px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 8px rgba(9, 132, 227, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🎂 3歲生日燒烤派對 🚗</h1>
+        <p>自駕家長專屬相片導航指南</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="info-box">
+            📅 <b>日期：</b>2026年6月27日 (星期六)<br>
+            📍 <b>地點：</b>中文大學 龔約翰學生中心 - LG1 天台燒烤園<br>
+            ⚠️ <b>特別提示：</b>請沿大埔公路靠左轉入<b>崇基門</b>，不要走正門四條柱。
+        </div>
+
+        <!-- Step 1 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/5GuE5UU.jpeg" alt="大埔公路">
+                <img src="https://i.imgur.com/YPXSuKQ.png" alt="轉入崇基門">
+            </div>
+            <div class="image-tip">◄ 左右滑動檢視多張實景圖 ►</div>
+            <div class="step-content">
+                <div class="step-badge">1</div>
+                <div class="step-title">大埔公路 ➔ 轉入崇基門</div>
+                <div class="step-desc">沿大埔公路馬料水段（大埔方向）行駛，靠左準備轉入「崇基門」入口。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/EXHTRwL.jpeg" alt="崇基路">
+            </div>
+            <div class="step-content">
+                <div class="step-badge">2</div>
+                <div class="step-title">進入崇基路</div>
+                <div class="step-desc">通過崇基門牌樓後，順路駛入「崇基路」。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/HjYrI7e.jpeg" alt="前往保安亭">
+            </div>
+            <div class="step-content">
+                <div class="step-badge">3</div>
+                <div class="step-title">沿崇基路直行至保安亭</div>
+                <div class="step-desc">順著崇基路一直往前開，前方會看到學校的保安入閘亭。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/fwyN02K.jpeg" alt="保安亭入閘">
+            </div>
+            <div class="step-content">
+                <div class="step-badge">4</div>
+                <div class="step-title">拍卡入閘（拍八達通）</div>
+                <div class="step-desc">於保安亭拍八達通卡入閘。**請順便告知保安人員：「去崇基學院燒烤（BBQ）」**。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 5 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/8lujSjw.jpeg" alt="迴旋處1">
+                <img src="https://i.imgur.com/nVwzHnL.jpeg" alt="迴旋處2">
+                <img src="https://i.imgur.com/OCNQ7xv.jpeg" alt="迴旋處3">
+            </div>
+            <div class="image-tip">◄ 左右滑動檢視行車方向 ►</div>
+            <div class="step-content">
+                <div class="step-badge">5</div>
+                <div class="step-title">通過迴旋處，繼續沿崇基路行駛</div>
+                <div class="step-desc">過了保安亭後會來到一個小迴旋處，依指示駛出並繼續沿「崇基路」往前開。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 6 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/iQ6Pqlt.jpeg" alt="禮拜堂1">
+                <img src="https://i.imgur.com/SeeGXHG.jpeg" alt="禮拜堂2">
+                <img src="https://i.imgur.com/jQr8k9D.jpeg" alt="禮拜堂3">
+            </div>
+            <div class="image-tip">◄ 左右滑動檢視地標 ►</div>
+            <div class="step-content">
+                <div class="step-badge">6</div>
+                <div class="step-title">途經 崇基學院禮拜堂</div>
+                <div class="step-desc">沿路前行，左手邊會看到宏偉的「崇基學院禮拜堂」，請繼續順路向前行駛。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 7 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/WPLhxP9.jpeg" alt="通過禮拜堂1">
+                <img src="https://i.imgur.com/LzfKFjB.jpeg" alt="通過禮拜堂2">
+                <img src="https://i.imgur.com/C9oDRsu.jpeg" alt="通過禮拜堂3">
+            </div>
+            <div class="image-tip">◄ 左右滑動檢視前行路況 ►</div>
+            <div class="step-content">
+                <div class="step-badge">7</div>
+                <div class="step-title">通過禮拜堂後 繼續沿崇基路直行</div>
+                <div class="step-desc">通過禮拜堂後，沿著單線雙程的崇基路繼續前行。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 8 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/bfI0hz3.jpeg" alt="往工程大樓1">
+                <img src="https://i.imgur.com/dIkU7Px.jpeg" alt="往工程大樓2">
+                <img src="https://i.imgur.com/5E9khi0.jpeg" alt="往工程大樓3">
+            </div>
+            <div class="image-tip">◄ 左右滑動檢視臨近終點路況 ►</div>
+            <div class="step-content">
+                <div class="step-badge">8</div>
+                <div class="step-title">前往 蒙民偉工程學大樓</div>
+                <div class="step-desc">跟隨路牌及實景，沿崇基路直行前往「蒙民偉工程學大樓」。</div>
+            </div>
+        </div>
+        <div class="arrow">⬇️</div>
+
+        <!-- Step 9 -->
+        <div class="step-card">
+            <div class="image-grid">
+                <img src="https://i.imgur.com/ZXg4lYO.jpeg" alt="抵達停車場">
+            </div>
+            <div class="step-content">
+                <div class="step-badge">9</div>
+                <div class="step-title">終點站：蒙民偉工程學大樓外停車區</div>
+                <div class="step-desc">抵達「蒙民偉工程學大樓」外的露天停車區。這裡距離我們的「龔約翰學生中心 - LG1 天台燒烤園」後門最近，停好車即可直接步入會場，無需搬運嬰兒車或物資上落長樓梯！</div>
+            </div>
+        </div>
+
+        <div class="parking-tips">
+            <h3>📌 泊車與抵達指引</h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 8px;">🅿️ <b>最便民路線：</b>由此停車區進入燒烤場是一條平路，強烈建議有推嬰兒車或攜帶大型派對物資的家長在此落客或泊車。</li>
+                <li>🅿️ <b>泊車收費：</b>入閘拍八達通計算，依中大訪客時租收費。</li>
+            </ul>
+        </div>
+
+        <!-- 記得改電話號碼 -->
+        <a href="tel:12345678" class="btn-call">📞 迷路了？即時聯絡主辦人</a>
+
+    </div>
+</body>
+</html>
